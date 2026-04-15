@@ -1,2 +1,0 @@
-# Acessories shop
-
