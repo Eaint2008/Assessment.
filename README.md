@@ -4,7 +4,7 @@
 
 #### Step-1
 
-[UML Diagram](work/UML.md)
+[UML Diagram](work/UMLDiagram.md)
 
 [StockItemJava](work/StockItem.md)
 
