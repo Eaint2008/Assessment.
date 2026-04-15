@@ -6,7 +6,7 @@
 
 [UML Diagram](docs/UML.md)
 
-[StockItemclass](docs/StockItemclass.md)
+[StockItemJava](docs/StockItem.md)
 
 [GUI](docs/GUI.md)
 
