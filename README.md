@@ -1,7 +1,7 @@
 # Accessories Shop Project
 
 ## Step 1
-[Assessment](docs/Assessment.md)
+[Assessment](Assessment./Assessment.md)
 
 ## Step 2
 [Click here to view Requirements](#)
