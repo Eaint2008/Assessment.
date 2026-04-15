@@ -4,11 +4,11 @@
 
 #### Step-1
 
-[UML Diagram](docs/UML.md)
+[UML Diagram](work/UML.md)
 
-[StockItemJava](docs/StockItem.md)
+[StockItemJava](work/StockItem.md)
 
-[GUI](docs/GUI.md)
+[GUI](work/GUI.md)
 
 [Test-Case](docs/testcase.md)
 
