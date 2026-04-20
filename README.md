@@ -6,7 +6,7 @@
 
 [UMLDiagram](work/UML-1.png)
 
-[StockItemJava](work/StockItem.md)
+[StockItemJava](work/StockItem)
 
 [GUI](work/GUI.md)
 
