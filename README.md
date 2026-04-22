@@ -4,9 +4,9 @@
 
 
 
-[UML diagram](OOSD1/UML)
+[UML diagram](OOSD1/UML.md)
 
-[Test cases](OOSD1/Testing)
+[Test cases](OOSD1/Testing.md)
 
-[Java.code](OOSD1/Java.code)
+[Java.code](OOSD1/Java.code.md)
 
