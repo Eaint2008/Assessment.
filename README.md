@@ -8,5 +8,5 @@
 
 [Test cases](OOSD1/Testing.md)
 
-[Java.code](OOSD1/Java.code.md)
+[Java.code](OOSD1/Java.code)
 
