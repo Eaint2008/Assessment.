@@ -6,10 +6,10 @@
 
 [UML diagram](UML/step)
 
-[Test cases - Java](Java/test)
+[Test cases - Java](Java)
 
 
-[Test cases - GUI](GUI/test)
+[Test cases - GUI](GUI)
 
 
 [Java.code](OOSD1/Assignment)
