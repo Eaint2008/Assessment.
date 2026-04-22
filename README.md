@@ -4,7 +4,7 @@
 
 
 
-[UML diagram](UML/step)
+[UML diagram](UML)
 
 [Test cases - Java](Java)
 
