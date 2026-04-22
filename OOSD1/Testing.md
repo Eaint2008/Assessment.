@@ -1,1 +1,22 @@
+## Step1 (Java Test)
 
+| Test Case                 | Purpose                                             | Expected result         |
+|---------------------------|-----------------------------------------------------|-------------------------|
+| TC1- Create item          | Checking if the objects are being created correctly | Stored correctly        |
+| TC2- Add stock            | Check quantity increases                            | It increases            |
+| TC2.1- Add stock (error)  | Checking whether it shows error message             | Error message shown     |
+| TC3- Sell stock           | Check quantity decreases                            | It decreases            |
+| TC3.1- Sell stock (error) | To check error handling for amount < 1.             | Error message displayed |
+| TC4- Changing price       | To ensure price updates correctly                   | New price stored        |
+| TC5 - VAT calculation     | Checking whether VAT calculation                    | It works accurately     |
+
+
+## Step2 (Java Test)
+
+## Step3 (Java Test)
+
+## Step1 (GUI Test)
+
+## Step2 (GUI Test)
+
+## Step3 (GUI Test)
