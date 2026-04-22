@@ -2,32 +2,11 @@
 
 ## Overview of project
 
-#### Step-1
 
-[UMLDiagram](work/UML-1.png)
 
-[StockItemJava](work/StockItem)
+[UML diagram](OOSD1/UML)
 
-[GUI](work/GUI.md)
+[Test cases](OOSD1/test)
 
-[Test-Case](docs/testcase.md)
+[Java.code](OOSD1/Assignment)
 
-#### Step-2
-
-[UML Diagram](docs/UML.md)
-
-[StockItemclass](docs/StockItemclass.md)
-
-[GUI](docs/GUI.md)
-
-[Test-Case](docs/testcase.md)
-
-#### Step-3
-
-[UML Diagram](docs/UML.md)
-
-[StockItemclass](docs/StockItemclass.md)
-
-[GUI](docs/GUI.md)
-
-[Test-Case](docs/testcase.md)
