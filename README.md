@@ -4,9 +4,13 @@
 
 
 
-[UML diagram](OOSD1/UML)
+[UML diagram](UML/step)
 
-[Test cases](OOSD1/test)
+[Test cases - Java](Java/test)
+
+
+[Test cases - GUI](GUI/test)
+
 
 [Java.code](OOSD1/Assignment)
 
