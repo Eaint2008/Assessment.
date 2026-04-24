@@ -1,4 +1,4 @@
-## Step1 (Java Test)
+## Step1 (Class Test)
 
 | Test Case                 | Purpose                                             | Expected result         |
 |---------------------------|-----------------------------------------------------|-------------------------|
@@ -11,9 +11,9 @@
 | TC5 - VAT calculation     | Checking whether VAT calculation                    | It works accurately     |
 
 
-## Step2 (Java Test)
+## Step2 (Class Test)
 
-## Step3 (Java Test)
+## Step3 (Class Test)
 
 ## Step1 (GUI Test)
 
