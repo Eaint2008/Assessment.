@@ -13,6 +13,19 @@
 
 ## Step2 (Class Test)
 
+| Test Case | Purpose                               | Expected result                                                     |
+|-----------|---------------------------------------|---------------------------------------------------------------------|
+| TC1       | Create NavSys object                  | Object created correctly and printed with overridden toString()     |
+| TC2       | Insert valid addStock amount          | Quantity increses correctly                                         |
+| TC2.1     | Insert invalid addStock amount        | Displayed ""Error: the stock exceeds 100."", but quantity unchanged |
+| TC3       | Insert valid sellStock amount         | Quantity decreases correctly                                        |
+| TC3.1     | Insert invalid sellStock amount       | Displayed ""Error: Amount is less than 1."", but quantity unchanged |
+| TC4       | Change price using setPriceWithoutVAT | Price updates correctly                                             |
+| TC5       | Test overriden getStockName()         | Return ""Navigation system""                                        |
+| TC5.1     | Test overriden getStockDescription()  | Return ""Geo Vision Sat Nav""                                       |
+| TC5.2     | Test overriden toString()             | Output displays in the same format as the StockItem class           |
+
+
 ## Step3 (Class Test)
 
 ## Step1 (GUI Test)
