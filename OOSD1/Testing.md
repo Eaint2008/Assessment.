@@ -3,12 +3,9 @@
 | Test Case                 | Purpose                                             | Expected result         |
 |---------------------------|-----------------------------------------------------|-------------------------|
 | TC1- Create item          | Checking if the objects are being created correctly | Stored correctly        |
-| TC2- Add stock            | Check quantity increases                            | It increases            |
-| TC2.1- Add stock (error)  | Checking whether it shows error message             | Error message shown     |
-| TC3- Sell stock           | Check quantity decreases                            | It decreases            |
-| TC3.1- Sell stock (error) | To check error handling for amount < 1.             | Error message displayed |
-| TC4- Changing price       | To ensure price updates correctly                   | New price stored        |
-| TC5 - VAT calculation     | Checking whether VAT calculation                    | It works accurately     |
+| TC2- addStock (Valid & Invalid)         | To vertify that quantity increases with a valid addStock amount and that appropriate error handling occurs for invalid amounts.                           | Valid input increases the quantity, while the invalid input displays an error message and leave the quantity unchanged.            |
+| TC3- Sell stock (Valid & Invalid)         | To ensure quantity decreases with a valid sellStock amount and that error handling works correctly for invalid input.                            | When a valid amount is entered, the quantity decreases correctly. For invalid input, the system displays an error message and the quantity remains unchanged.    |
+| TC4- Change price & VAT update       | To ensure price updates correctly and the VAT price recalculaye accurately.                  | The new price is  stored, and the VAT value updates accordingly.        |
 
 
 ## Step2 (Class Test)
@@ -16,14 +13,10 @@
 | Test Case | Purpose                               | Expected result                                                     |
 |-----------|---------------------------------------|---------------------------------------------------------------------|
 | TC1       | Create NavSys object                  | Object created correctly and printed with overridden toString()     |
-| TC2       | Insert valid addStock amount          | Quantity increses correctly                                         |
-| TC2.1     | Insert invalid addStock amount        | Displayed ""Error: the stock exceeds 100."", but quantity unchanged |
-| TC3       | Insert valid sellStock amount         | Quantity decreases correctly                                        |
-| TC3.1     | Insert invalid sellStock amount       | Displayed ""Error: Amount is less than 1."", but quantity unchanged |
+| TC2       | Testing both valid and invalid addStock amount to ensure correct behaviour         | Quantity increases correctly when a valid addStock amount is entered, and an error message (‘Error: the stock exceeds 100.’) is displayed with the quantity unchanged when an invalid amount is entered.                                 |
+| TC3       | Testing both valid and invalid sellStock amount to ensure correct behaviour        | Quantity decreases correctly when a valid sellStock amount is entered and an error message (‘Error: Amount is less than 1.’) is displayed with the quantity unchanged when an invalid amount is entered.                                  |
 | TC4       | Change price using setPriceWithoutVAT | Price updates correctly                                             |
-| TC5       | Test overriden getStockName()         | Return ""Navigation system""                                        |
-| TC5.1     | Test overriden getStockDescription()  | Return ""Geo Vision Sat Nav""                                       |
-| TC5.2     | Test overriden toString()             | Output displays in the same format as the StockItem class           |
+| TC5       | Test overriden getStockName(), getStockDescription(), toString()        | Return ""Navigation system"",  Return ""Geo Vision Sat Nav"" , Output displays in the same format as the StockItem class                                      |
 
 
 ## Step3 (Class Test)
