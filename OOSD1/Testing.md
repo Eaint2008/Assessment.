@@ -38,4 +38,3 @@
 | TC3       | To confirm that the button actions function correctly by updating or restoring the displayed values.          | Clicking the Update button displays the updated values, while clicking the Reset button restores and displays the original values. |
 
 
-## Step3 (GUI Test)
