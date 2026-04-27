@@ -12,9 +12,8 @@
 | Test Case | Purpose                               | Expected result                                                     |
 |-----------|---------------------------------------|---------------------------------------------------------------------|
 | TC1       | Create NavSys object                  | Object created correctly and printed with overridden toString()     |
-| TC2       | Testing both valid and invalid for addStock amount and sellStock to ensure correct behaviour         | Quantity increases correctly when a valid addStock amount is entered, and an error message (‘Error: the stock exceeds 100.’) is displayed with the quantity unchanged when an invalid amount is entered. Quantity decreases correctly when a valid sellStock amount is entered and an error message (‘Error: Amount is less than 1.’) is displayed with the quantity unchanged when an invalid amount is entered.                                 |                      |
-| TC3      | Change price using setPriceWithoutVAT | Price updates correctly                                             |
-| TC4      | Test overriden getStockName(), getStockDescription(), toString()        | Return ""Navigation system"",  Return ""Geo Vision Sat Nav"" , Output displays in the same format as the StockItem class                                      |
+| TC2       | Testing both valid and invalid for addStock amount, sellStock, and price to ensure correct behaviour         | Quantity increases correctly when a valid addStock amount is entered, and an error message (‘Error: the stock exceeds 100.’) is displayed with the quantity unchanged when an invalid amount is entered. Quantity decreases correctly when a valid sellStock amount is entered and an error message (‘Error: Amount is less than 1.’) is displayed with the quantity unchanged when an invalid amount is entered. Price updates correctly                                  |                      |                                           |
+| TC3     | Test overriden getStockName(), getStockDescription(), toString()        | Return ""Navigation system"",  Return ""Geo Vision Sat Nav"" , Output displays in the same format as the StockItem class                                      |
 
 
 ## Step3 (Class Test)
