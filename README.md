@@ -1,7 +1,6 @@
-# Acessories shop project
+# Car Parts and Acessories shop 
 
-## Overview of project
-
+#### This assessment includes Java implementation, GUI, Test cases and UML diagrams, all of which demostrate the calculation addStock or sellStock amounts, new prices, and VAT.
 
 
 [UML diagram](OOSD1/UML.md)
