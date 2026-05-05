@@ -6,6 +6,6 @@
 
 ![Insert here](Image/UML2.png)
 
-## TestPolymorphism
+## TestPolymorphism UML diagram
 
 ![Insert here](Image/UML3.png)
