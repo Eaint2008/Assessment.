@@ -18,6 +18,13 @@
 
 ## Step3 (Class Test)
 
+| Test Case | Purpose                                                                                                      | Expected result                                                                                                  |
+|-----------|--------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
+| TC1       | Checking whether each subclass prints correct details when passed into itemInstance() using polymorphism     | Each subclass is shown correctly, including stock name, Description, stockCode, and Prices (VAT and WithoutVAT). |
+| TC2       | To vertify the method addStock() and sellStock() work correctly for any subclass passed into itemInstance(). | Quantities are shown correctly.                                                                                  |
+| TC3       | To ensure that setPriceWithoutVAT() provides the new price by recalculating VAT accurately.                  | Prices are updates and VAT value is presented correctly.                                                         |
+
+
 ## Step1 (GUI Test)
 
 | Test Case | Purpose                                                                                                  | Expected result                                                                                                                                  |
