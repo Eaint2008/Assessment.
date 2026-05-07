@@ -5,25 +5,28 @@
 package Assignment;
 
 /**
- *
- * @author thein
+ * StockItemGUI 
+ * This class provides a GUI for creating and managing StockItem objects. It lets the user to create a stock item, add stock, sell stock, and update the price.
  */
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
 public class StockItemGUI extends JFrame{
-    private StockItem currentItem;
-    
+    // Instance of StockItem 
+    private StockItem Item;
+    // GUI input fields
     private JTextField stockCodeField, quantityField, priceField, addStockField, sellStockField;
+    // Output display area
     private JTextArea outputArea;
-    
+    // Constructor
     public StockItemGUI(){
+        // WIndow settings
         setTitle("Car Parts & Acessories Shop (Stock Item)");
         setSize(500,500);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new BorderLayout());
-        
+        // Use Panel for creating a StockItem
         JPanel createPanel = new JPanel(new GridLayout(4,2));
         
         createPanel.add(new JLabel("Stock Code:"));
@@ -44,7 +47,7 @@ public class StockItemGUI extends JFrame{
         
         add(createPanel, BorderLayout.NORTH); 
         
-        
+        // Panel for actions: add, sell, price
         JPanel actionPanel = new JPanel(new GridLayout(4,4));
         
         
@@ -69,56 +72,59 @@ public class StockItemGUI extends JFrame{
 
         
         add(actionPanel, BorderLayout.CENTER);
-        
+        // Output display area
         outputArea = new JTextArea();
         outputArea.setEditable(false);
         add((outputArea),BorderLayout.SOUTH);
         
+        // Creating StockItem
         createBtn.addActionListener(e ->{
             try{
                 String stockCode = stockCodeField.getText();
                 int quantity = Integer.parseInt(quantityField.getText());
                 double price = Double.parseDouble(priceField.getText());
                 
-                currentItem = new StockItem(stockCode, quantity, price);
-                outputArea.setText("StockItem objects created:\n\n" + currentItem.toString());
+                Item = new StockItem(stockCode, quantity, price);
+                outputArea.setText("StockItem objects created:\n\n" + Item.toString());
             }catch (Exception ex){
                 outputArea.setText("Invalid Value!");
             }
         });
-        
+        // addStock
         addBtn.addActionListener(e ->{
-            if(currentItem == null){
+            if(Item == null){
                 outputArea.setText("Create an item first.");
                 return;
             } try{
                 int amount  = Integer.parseInt(addStockField.getText());
-                currentItem.addStock(amount);
-                outputArea.setText("Stock added:\n\n" + currentItem.toString());
+                Item.addStock(amount);
+                outputArea.setText("Stock added:\n\n" + Item.toString());
             }catch (Exception ex){
                 outputArea.setText("Invalid Amount!");
             }
         });
+        // sellStock
         sellBtn.addActionListener(e->{
-            if(currentItem == null){
+            if(Item == null){
                 outputArea.setText("Create an item first.");
                 return;
             } try{
                 int amount = Integer.parseInt(sellStockField.getText());
-                currentItem.sellStock(amount);
-                outputArea.setText("Stock sold:\n\n " + currentItem.toString());
+                Item.sellStock(amount);
+                outputArea.setText("Stock sold:\n\n " + Item.toString());
             } catch(Exception ex){
                 outputArea.setText("Invalid sell amount!");
             }
         });
+        // Change price
         priceBtn.addActionListener(e->{
-            if(currentItem == null){
+            if(Item == null){
                 outputArea.setText("Create an item first.");
                 return;
             }try{
                 double newprice = Double.parseDouble(newpriceField.getText());
-                currentItem.setPriceWithoutVAT(newprice);
-                outputArea.setText("Price changes:\n\n " + currentItem.toString());
+                Item.setPriceWithoutVAT(newprice);
+                outputArea.setText("Price changes:\n\n " + Item.toString());
             } catch(Exception ex){
                 outputArea.setText("Inavlid Price!");
             }
@@ -126,13 +132,13 @@ public class StockItemGUI extends JFrame{
     }
  
     /**
-     * @param args the command line arguments
+     * Main method
      */
     public static void main(String[] args) {
         StockItemGUI gui = new StockItemGUI();
         gui.setVisible(true);
         
-        // TODO code application logic here
+       
     }
     
 }
