@@ -5,16 +5,14 @@
 package Assignment;
 
 /**
- *
- * @author thein
+ * Tests NavSys
  */
 public class TestNavSys {
     
 
-    /**
-     * @param args the command line arguments
-     */
+  
     public static void main(String[] args) {
+        // Create NavSys item
         NavSys b = new NavSys("NS101", 10, 99.99);
         System.out.println("Task 1");
         System.out.println(b);
@@ -34,7 +32,7 @@ public class TestNavSys {
         System.out.println("Task 5");
         b.addStock(0);
         
-        // TODO code application logic here
+        
     }
     
 }
