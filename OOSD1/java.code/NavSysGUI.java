@@ -5,23 +5,27 @@
 package Assignment;
 
 /**
- *
+ * NavSysGUI class
+ * This class provides a GUI for managing a NavSys object. It allows to user to add stock, sell stock, and update price.
  * @author thein
  */
 import javax.swing.*;
 import java.awt.*;
 public class NavSysGUI extends JFrame {
+    // NavSys objects
     private NavSys navigation;
-    
+    // Input fields
     private JTextField addStockField, sellStockField, priceField;
+    // Output area to display item details
     private JTextArea output;
-    
+    // Constructor
     public NavSysGUI(){
+        // Window settings
         setTitle("Geo Vision Sat Nav navigation system");
         setSize(500,500);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new BorderLayout());
-        
+        // Using Panel for user input field and buttons
         JPanel panel = new JPanel(new GridLayout(4,2,5,5));
         
         panel.add(new JLabel("Insert addStock amount:"));
@@ -36,17 +40,17 @@ public class NavSysGUI extends JFrame {
         priceField = new JTextField();
         panel.add(priceField);
         
-        
+        // Update Button
         JButton updateBtn = new JButton("Update");
         panel.add(updateBtn);
-        
+        // Reset Button
         JButton resetBtn = new JButton("Reset");
         panel.add(resetBtn);
         
         add(panel, BorderLayout.NORTH);
-        
+        // Creating default NavSys object
         navigation = new NavSys ("NS101", 10, 99.99);
-        
+        // Output area to display item details
         output = new JTextArea();
         output.setEditable(false);
         add(new JScrollPane(output), BorderLayout.CENTER);
@@ -59,17 +63,21 @@ public class NavSysGUI extends JFrame {
         
         setVisible(true);
     }
+    // Let the user to update stock and price.
     private void updateStock(){
         try{
+            // Add stock if field is not empty
             if(!addStockField.getText().isEmpty()){
                 int add = Integer.parseInt(addStockField.getText());
                 navigation.addStock(add);
             }
+            // Sell stock if field 
             if(!sellStockField.getText().isEmpty()){
                 int sell = Integer.parseInt(sellStockField.getText());
                 navigation.sellStock(sell);
                 
             }
+            // Change price
             if(!priceField.getText().isEmpty()){
                 double newPrice = Double.parseDouble(priceField.getText());
                 navigation.setPriceWithoutVAT(newPrice);
@@ -80,6 +88,7 @@ public class NavSysGUI extends JFrame {
             output.append("Invalid input");
         }
     }
+    // resetting the addStock, sellStock, and price
     private void resetStock(){
         addStockField.setText("");
         sellStockField.setText("");
@@ -95,7 +104,7 @@ public class NavSysGUI extends JFrame {
     }
 
     /**
-     * @param args the command line arguments
+     * Main method
      */
     public static void main(String[] args) {
         NavSysGUI gui = new NavSysGUI();
@@ -104,3 +113,4 @@ public class NavSysGUI extends JFrame {
     }
     
 }
+
